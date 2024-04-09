@@ -1,0 +1,148 @@
+/* inserisco al Body il colore di sfondo uguale per tutta la pagina, e anche un margine a sinistra in modo che sia tutto allineato */
+
+body {
+    background-color: rgb(20, 20, 20);
+    margin-left: 80px;
+    overflow-x: hidden;
+}
+
+
+/* modifiche al logo e all'immagine di profilo della Nav */ 
+
+.logoNetflix {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.utente-img {
+    width: 80px;
+    margin-right: 25px;
+}
+
+/* modfifiche sezione ricerca */
+
+h1 {
+    margin-left: 25px;
+}
+
+.drop-generi {
+    width: 120px;
+    border: 1px solid white;
+    text-align: start;
+    background-color: black;
+}
+
+.dropdown-toggle::after {
+    margin-left: 2.255em;
+}
+
+.icn-filter {
+    border: 1px solid rgb(80, 80, 80);
+    color: rgb(80, 80, 80);
+    width: 50px;
+}
+
+.btn-group {
+    margin-right: 50px;
+}
+
+/* unico colore per tutti i link della pagina sfruttando la classe bootstrap in comune*/ 
+
+.nav-link {
+    color: rgb(164, 165, 167);
+}
+
+/* modifiche di stile al Footer */
+
+.btn-footer {
+    border:1px solid rgb(73, 72, 70);
+    width: 100px;
+    padding-left: 3px;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.icn-social {
+    padding-right: 20px;
+    margin-top: 200px;
+}
+
+img {
+    width: 360px;
+}
+
+/* aggiungere gli hover alle card richiesti */
+
+.hover-img img {
+    transition: transform 0.5s ease;
+}
+
+.hover-img img:hover {
+    transform: scale(1.2);
+    border: 1px solid blue;
+}
+
+/* extra javascript - far apparire il div solo in scroll */
+
+.scrollImgCarosello {
+    position: relative; 
+}
+
+.scroll-img {
+    position: absolute;
+    right: -200vw;  
+    transition: 2s ease-in-out;
+}
+
+
+        /* MEDIA QUERY PER ADATTARE LA PAGINA A TUTTI GLI SCHERMI */
+
+/* Media query Per gli schermi di piccole dimensioni */
+/* 1 per nascondere il div, 1 per dove deve riapparire */
+
+@media screen and (max-width: 480px) {
+    body {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #divImg {
+        right: -1200vw; 
+    }
+}
+/* Media query per schermi da 481px a 768px */
+/* 1 per nascondere il div, 1 per dove deve riapparire */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #divImg {
+        right: -400vh; 
+    }
+}
+
+/* Media query per schermi da 769px in poi */
+/* 1 per nascondere il div, 1 per dove deve riapparire */
+
+@media screen and (min-width: 769px) {
+    body {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #divImg {
+        right: -300vw; 
+    }
+}
+
+
+
+
